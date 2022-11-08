@@ -1,0 +1,136 @@
+.contact {
+  background: white;
+  padding: 3rem 0;
+
+  .section-title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+
+    .card {
+      background: #fff;
+      width: 260px;
+      margin: 20px;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+      border-radius: 3px;
+
+      i {
+        font-size: 3.5rem;
+        color: $color-blue;
+        margin-bottom: 1rem;
+        transition: 0.4s;
+      }
+
+      i:hover {
+        transform: translateY(-20%);
+      }
+
+      & > * {
+        margin: 0.5rem;
+      }
+    }
+  }
+
+  form {
+    h2 {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 3px;
+    box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+    padding: 2rem;
+
+    .form-group {
+      input {
+        margin: 0.75rem 0;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid black;
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      textarea {
+        width: 100%;
+        border-radius: 3px;
+        margin: 0.75rem 0;
+        border: 1px solid black;
+        padding: 0.75rem;
+        font-size: 1rem;
+        resize: vertical;
+      }
+
+      textarea:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      // width: 100%;
+      // margin: 0.75rem 0;
+      // padding: 0.75rem 0;
+      // border-radius: 3px;
+      // border: none;
+      // background: $color-blue;
+      // color: white;
+      // cursor: pointer;
+      // font-size: 1rem;
+      // font-weight: bold;
+      // letter-spacing: 1.5px;
+      // transition: all 0.3s ease;
+    }
+
+    // button:hover {
+    //   background: darken($color-blue, 10%);
+    // }
+
+    #status {
+      width: 100%;
+      text-align: center;
+      // padding: 10px;
+      margin: 0 auto;
+      border-radius: 3px;
+      color: #00b700;
+    }
+    #status.success {
+      color: #00b700;
+      animation: status 4s ease forwards;
+    }
+    #status.error {
+      color: red;
+      animation: status 4s ease forwards;
+    }
+    @keyframes status {
+      0% {
+        opacity: 1;
+        pointer-events: all;
+      }
+      90% {
+        opacity: 1;
+        pointer-events: all;
+      }
+      100% {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+  }
+}

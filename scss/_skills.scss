@@ -1,0 +1,91 @@
+.skills {
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .container {
+    padding: 6rem 0;
+  }
+
+  .skills-icons {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    svg {
+      margin: 0.5rem;
+      width: 90px;
+
+      @media (max-width: 420px) {
+        width: 70px;
+      }
+    }
+    li {
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1rem;
+      margin: 1rem;
+
+      @media (max-width: 420px) {
+        margin: 1rem 0.75rem;
+      }
+
+      .aws-logo {
+        background: white;
+        padding: 10px;
+        border-radius: 3px;
+      }
+    }
+    li:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  .seperator-skew-top {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    width: 120%;
+    overflow: hidden;
+
+    svg {
+      position: absolute;
+      top: 0;
+      transform: scaleY(-1) scaleX(-1);
+      .fill-white {
+        fill: white;
+      }
+    }
+  }
+
+  .seperator-skew-bottom {
+    position: absolute;
+    bottom: -0.5px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    width: 120%;
+    overflow: hidden;
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      .fill-white {
+        fill: white;
+      }
+    }
+  }
+}
