@@ -1,6 +1,6 @@
 ## Personal Porfolio Site
 
-My personal portfolio site. Can be viewed at www.gauravgiri.com.np
+My personal portfolio site. Live at www.gauravgiri.com.np
 
 ## Built with
 
